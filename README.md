@@ -15,10 +15,10 @@ crop recommendation, yield prediction, and crop price prediction. By harnessing 
 select suitable crops, forecast yields, and predict crop prices accurately. Through the seamless integration of these modules, our system aims to enhance agricultural decision-making, improve crop productivity, 
 and ultimately contribute to the sustainability and profitability of farming practices.
 ### Dataset
-Link-https://www.kaggle.com/code/niteshhalai/crop-recommendation-dataset/
-     https://www.kaggle.com/code/niteshhalai/crop-price-dataset/
-     https://www.kaggle.com/code/mahmoudmagdyelnahal/crop-yield-prediction-99/input
-     https://www.kaggle.com/datasets/gdabhishek/fertilizer-prediction?resource=download
+      Crop Recommendation Dataset: https://www.kaggle.com/code/niteshhalai/crop-recommendation-dataset/
+      Crop Price Dataset: https://www.kaggle.com/code/niteshhalai/crop-price-dataset/ 
+      Crop Yield Prediction Dataset: https://www.kaggle.com/code/mahmoudmagdyelnahal/crop-yield-prediction-99/input
+      Fertilizer Prediction Dataset: https://www.kaggle.com/datasets/gdabhishek/fertilizer-prediction?resource=download
 ### Deployment
 Link-http://192.168.43.242:5000
 
