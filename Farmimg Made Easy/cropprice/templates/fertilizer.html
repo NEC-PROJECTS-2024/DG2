@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Yield Prediction</title>
+    <style>
+        body {
+            background-image: url('./static/fertilizer1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+            font-style:italic;
+        }
+        hr {
+            border-color: orange;
+            margin-top: 20px;
+        }
+        form {
+            width: 70%;
+            margin-left:30%;
+        }
+        label {
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            color:black;
+        }
+        input[type="number"] {
+            width: 50%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 5px;
+        }
+        input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: darkorange;
+        }
+        .back-btn {
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: red;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .button-container {
+         margin-left:20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crop Fertilizer Prediction</h1>
+    <form action="/ferpredict" method="post">
+        <label for="Temparature">Temparature:</label>
+        <input type="number" name="Temparature" id="Temparature" required><br><br>
+        <label for="Humidity">Humidity:</label>
+        <input type="number" name="Humidity" id="Humidity" required><br><br>
+        <label for="Moisture">Moisture:</label>
+        <input type="number" name="Moisture" id="Moisture" required><br><br>
+        <label for="Soil Type">Soil Type:</label>
+        <input type="text" name="Soil Type" id="Soil Type" required><br><br>
+        <label for="Crop Type">Crop Type:</label>
+        <input type="text" name="Crop Type" id="Crop Type" required><br><br>
+        <label for="Nitrogen">Nitrogen:</label>
+        <input type="number" id="Nitrogen" name="Nitrogen" required><br><br>
+        <label for="Potassium">Potassium:</label>
+        <input type="number" name="Potassium" id="Potassium" required><br><br>
+        <label for="Phosphorous">Phosphorous:</label>
+        <input type="number" id="Phosphorous" name="Phosphorous" required>
+        
+        <div class="button-container">
+            <a href="/" type="button" class="back-btn">Back</a>
+            <input type="submit" value="Submit">  
+        </div>
+    </form>
+</body>
+</html>

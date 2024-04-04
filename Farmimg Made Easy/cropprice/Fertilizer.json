@@ -1,0 +1,22 @@
+{
+  "Siol_type": {
+    "Sandy": 4,
+    "Loamy": 2,
+    "Black": 0,
+    "Red": 3,
+    "Clayey": 1
+  },
+  "Crop_type": {
+    "Maize": 3,
+    "Sugarcane": 8,
+    "Cotton": 1,
+    "Tobacco": 9,
+    "Paddy": 6,
+    "Barley": 0,
+    "Wheat": 10,
+    "Millets": 4,
+    "Oil seeds": 5,
+    "Pulses": 7,
+    "Ground Nuts": 2
+  }
+}

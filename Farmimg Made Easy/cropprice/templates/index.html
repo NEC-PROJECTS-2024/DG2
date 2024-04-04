@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Max Price</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://www.isaaa.org/kc/cropbiotechupdate/files/images/4222020122026AM.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            heigth:100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            
+            color: #333;
+            margin-top:-550px;
+            position:absolute;
+            left:500px;
+           
+            
+            
+        }
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            width: 450px;
+            margin-right:70px;
+            
+
+        
+            
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="submit"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body> 
+    
+<h1><b>CROP PRICE PREDICTION</b></h1>
+
+
+        
+    <form action="/predict" id="predictionForm" method="post">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required><br><br>
+
+        <label for="district">District:</label>
+        <input type="text" id="district" name="district" required><br><br>
+
+        <label for="market">Market:</label>
+        <input type="text" id="market" name="market" required><br><br>
+
+        <label for="variety">Variety:</label>
+        <input type="text" id="variety" name="variety" required><br><br>
+
+        <label for="rainfall">Rainfall:</label>
+        <input type="number" id="Rainfall" name="Rainfall" required><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>

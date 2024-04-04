@@ -1,0 +1,29 @@
+{
+  "state": {
+    "ARHAR": 0,
+    "COTTON": 1,
+    "GRAM": 2,
+    "GROUNDNUT": 3,
+    "MAIZE": 4,
+    "MOONG": 5,
+    "PADDY": 6,
+    "RAPESEED AND MUSTARD": 7,
+    "SUGARCANE": 8,
+    "WHEAT": 9
+  },
+  "district": {
+    "Uttar Pradesh": 11,
+    "Karnataka": 4,
+    "Gujarat": 2,
+    "Andhra Pradesh": 0,
+    "Maharashtra": 6,
+    "Punjab": 8,
+    "Haryana": 3,
+    "Rajasthan": 9,
+    "Madhya Pradesh": 5,
+    "Tamil Nadu": 10,
+    "Bihar": 1,
+    "Orissa": 7,
+    "West Bengal": 12
+  }
+}

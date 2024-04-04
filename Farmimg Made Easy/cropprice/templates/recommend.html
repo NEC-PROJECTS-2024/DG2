@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>CROP RECOMMENDATION SYSTEM</title>
+    <style>
+        body {
+            background-image: url('https://wallpapercave.com/wp/wp8224471.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        hr {
+            border-color: orange;
+            margin-top: 20px;
+        }
+        form {
+            width: 70%;
+            margin-left:30%;
+        }
+        label {
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            margin-top: 20px;
+        }
+        input[type="number"] {
+            width: 50%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: darkorange;
+        }
+        .back-btn {
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: red;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .button-container {
+         margin-left:20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>CROP RECOMMENDATION SYSTEM</h1>
+    <hr>
+    <form action="/rempredict" method="post">
+        <label for="phosphorous">Enter the Phosphorous value of the soil:</label>
+        <input type="number" min="0" max="150" id="phosphorous" name="P" required>
+
+        <label for="nitrogen">Enter the Nitrogen value of the soil:</label>
+        <input type="number" min="0" max="150" id="nitrogen" name="N" required>
+
+        <label for="potassium">Enter the Potassium value of the soil:</label>
+        <input type="number" min="0" max="210" id="potassium" name="K" required>
+
+        <label for="temperature">Enter the average Temperature value around the field:</label>
+        <input type="number" min="0" max="60" id="temperature" name="temperature" required>
+
+        <label for="humidity">Enter the average percentage of Humidity around the field:</label>
+        <input type="number" min="0" max="100" id="humidity" name="humidity" required>
+
+        <label for="ph">Enter the Ph value of the soil:</label>
+        <input type="number" min="0" max="14" id="ph" name="ph" required>
+
+        <label for="rainfall">Enter the average amount of Rainfall around the field:</label>
+        <input type="number" min="0" max="3000" id="rainfall" name="rainfall" required>
+
+        <div class="button-container">
+            <a href="/" class="back-btn">Back</a>
+            <input type="submit" value="Submit">
+            
+        </div>
+    </form>
+</body>
+</html>

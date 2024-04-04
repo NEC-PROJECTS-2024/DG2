@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Yield Prediction</title>
+    <style>
+        body {
+            background-image: url('./static/Increase-crop-Yield.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 10px;
+            font-style:italic;
+        }
+        hr {
+            border-color: orange;
+            margin-top: 20px;
+        }
+        form {
+            width: 70%;
+            margin-left:30%;
+        }
+        label {
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            color:black;
+        }
+        input[type="number"] {
+            width: 50%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 5px;
+        }
+        input[type="text"] {
+            width: 50%;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 5px;
+        }
+        input[type="submit"] {
+            background-color: orange;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: darkorange;
+        }
+        .back-btn {
+            margin-top: 10px;
+            text-decoration: none;
+            color: white;
+            background-color: red;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .button-container {
+         margin-left:20%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crop Yield Prediction</h1>
+    <form action="/yieldpredict" method="post">
+        <label for="crop">Crop:</label>
+        <input type="text" name="crop" id="crop" required><br><br>
+        <label for="state">State:</label>
+        <input type="text" name="state" id="state" required><br><br>
+        <label for="cost_of_cultivation">Cost of Cultivation:</label>
+        <input type="number" name="cost_of_cultivation" id="cost_of_cultivation" required><br><br>
+        <label for="cost_of_production">Cost of Production:</label>
+        <input type="number" name="cost_of_production" id="cost_of_production" required><br><br>
+        <div class="button-container">
+        <input type="submit" value="Predict">
+        <a href="/" type="button" class="back-btn">Back</a>
+        </div>
+    </form>
+</body>
+</html>
