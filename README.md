@@ -21,7 +21,7 @@ and ultimately contribute to the sustainability and profitability of farming pra
  Crop Yield Prediction Dataset Link: https://www.kaggle.com/code/mahmoudmagdyelnahal/crop-yield-prediction-99/input
  Fertilizer Prediction Dataset Link: https://www.kaggle.com/datasets/gdabhishek/fertilizer-prediction?resource=download
 ### Deployment
-Link-http://192.168.43.242:5000
+Link-http://16.170.164.183:5000/
 
 
 
